@@ -9,6 +9,7 @@ module Api
         #options = { include: [:orders] }
         #render json: OfferSerializer.new(offers, options).serialized_json
         render json: offers, include: :orders, status: :ok
+        puts 'hello 1234'
       end
 
       # GET api/v1/offers/:id
