@@ -25,6 +25,7 @@ module Api
         else
           render json: offer.errors, status: :unprocessable_entity
         end
+        puts 'hello'
       end
 
       private
