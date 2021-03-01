@@ -15,6 +15,7 @@ module Api
       def show
         offer = Offer.find(params[:id])
         render json: OfferSerializer.new(offer).serialized_json
+        puts 'hello 123'
       end
 
       # POST api/v1/offers
